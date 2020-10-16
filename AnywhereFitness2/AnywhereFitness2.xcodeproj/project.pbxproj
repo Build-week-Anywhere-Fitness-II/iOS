@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E632EE0607B5AE2F0C4E340 /* Pods_AnywhereFitness2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86E9C3CA94C7FB3556290FE9 /* Pods_AnywhereFitness2.framework */; };
 		31711CEE25390103003BF8DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31711CED25390103003BF8DE /* AppDelegate.swift */; };
 		31711CF025390103003BF8DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31711CEF25390103003BF8DE /* SceneDelegate.swift */; };
 		31711CF525390103003BF8DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31711CF325390103003BF8DE /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0968A786DA10B229F3FCF300 /* Pods-AnywhereFitness2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnywhereFitness2.release.xcconfig"; path = "Target Support Files/Pods-AnywhereFitness2/Pods-AnywhereFitness2.release.xcconfig"; sourceTree = "<group>"; };
 		31711CEA25390103003BF8DE /* AnywhereFitness2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnywhereFitness2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31711CED25390103003BF8DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31711CEF25390103003BF8DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +30,8 @@
 		31711CFE25390104003BF8DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4679C565253919720070C8FC /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		4679C56D25391E1E0070C8FC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		86E9C3CA94C7FB3556290FE9 /* Pods_AnywhereFitness2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnywhereFitness2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFB4A3B6052BA4D88B3D213B /* Pods-AnywhereFitness2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnywhereFitness2.debug.xcconfig"; path = "Target Support Files/Pods-AnywhereFitness2/Pods-AnywhereFitness2.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +39,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E632EE0607B5AE2F0C4E340 /* Pods_AnywhereFitness2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3161561F34C6AA908F60455C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				86E9C3CA94C7FB3556290FE9 /* Pods_AnywhereFitness2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		31711CE125390103003BF8DE = {
 			isa = PBXGroup;
 			children = (
 				31711CEC25390103003BF8DE /* AnywhereFitness2 */,
 				31711CEB25390103003BF8DE /* Products */,
+				E13C75E3A88307712342B17E /* Pods */,
+				3161561F34C6AA908F60455C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +96,16 @@
 			path = "View Controllers";
 			sourceTree = "<group>";
 		};
+		E13C75E3A88307712342B17E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AFB4A3B6052BA4D88B3D213B /* Pods-AnywhereFitness2.debug.xcconfig */,
+				0968A786DA10B229F3FCF300 /* Pods-AnywhereFitness2.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -88,9 +113,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 31711D0125390104003BF8DE /* Build configuration list for PBXNativeTarget "AnywhereFitness2" */;
 			buildPhases = (
+				CD29E739B7D9E7AD4FF25ADD /* [CP] Check Pods Manifest.lock */,
 				31711CE625390103003BF8DE /* Sources */,
 				31711CE725390103003BF8DE /* Frameworks */,
 				31711CE825390103003BF8DE /* Resources */,
+				A140A38DC0CDEA3343C3B447 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -146,6 +173,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A140A38DC0CDEA3343C3B447 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AnywhereFitness2/Pods-AnywhereFitness2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AnywhereFitness2/Pods-AnywhereFitness2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AnywhereFitness2/Pods-AnywhereFitness2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD29E739B7D9E7AD4FF25ADD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AnywhereFitness2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		31711CE625390103003BF8DE /* Sources */ = {
@@ -298,6 +367,7 @@
 		};
 		31711D0225390104003BF8DE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFB4A3B6052BA4D88B3D213B /* Pods-AnywhereFitness2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -316,6 +386,7 @@
 		};
 		31711D0325390104003BF8DE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0968A786DA10B229F3FCF300 /* Pods-AnywhereFitness2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
