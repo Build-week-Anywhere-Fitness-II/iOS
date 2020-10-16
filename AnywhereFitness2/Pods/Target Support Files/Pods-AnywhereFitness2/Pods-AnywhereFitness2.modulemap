@@ -1,0 +1,6 @@
+framework module Pods_AnywhereFitness2 {
+  umbrella header "Pods-AnywhereFitness2-umbrella.h"
+
+  export *
+  module * { export * }
+}
