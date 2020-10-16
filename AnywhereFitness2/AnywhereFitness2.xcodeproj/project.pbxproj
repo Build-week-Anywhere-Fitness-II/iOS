@@ -10,11 +10,12 @@
 		1E632EE0607B5AE2F0C4E340 /* Pods_AnywhereFitness2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86E9C3CA94C7FB3556290FE9 /* Pods_AnywhereFitness2.framework */; };
 		31711CEE25390103003BF8DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31711CED25390103003BF8DE /* AppDelegate.swift */; };
 		31711CF025390103003BF8DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31711CEF25390103003BF8DE /* SceneDelegate.swift */; };
-		31711CF225390103003BF8DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31711CF125390103003BF8DE /* ViewController.swift */; };
 		31711CF525390103003BF8DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31711CF325390103003BF8DE /* Main.storyboard */; };
 		31711CF825390103003BF8DE /* AnywhereFitness2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 31711CF625390103003BF8DE /* AnywhereFitness2.xcdatamodeld */; };
 		31711CFA25390104003BF8DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31711CF925390104003BF8DE /* Assets.xcassets */; };
 		31711CFD25390104003BF8DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31711CFB25390104003BF8DE /* LaunchScreen.storyboard */; };
+		4679C566253919720070C8FC /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4679C565253919720070C8FC /* SignUpViewController.swift */; };
+		4679C56E25391E1E0070C8FC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4679C56D25391E1E0070C8FC /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,12 +23,13 @@
 		31711CEA25390103003BF8DE /* AnywhereFitness2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnywhereFitness2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31711CED25390103003BF8DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31711CEF25390103003BF8DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		31711CF125390103003BF8DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		31711CF425390103003BF8DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		31711CF725390103003BF8DE /* AnywhereFitness2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AnywhereFitness2.xcdatamodel; sourceTree = "<group>"; };
 		31711CF925390104003BF8DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31711CFC25390104003BF8DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		31711CFE25390104003BF8DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4679C565253919720070C8FC /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		4679C56D25391E1E0070C8FC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		86E9C3CA94C7FB3556290FE9 /* Pods_AnywhereFitness2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnywhereFitness2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFB4A3B6052BA4D88B3D213B /* Pods-AnywhereFitness2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnywhereFitness2.debug.xcconfig"; path = "Target Support Files/Pods-AnywhereFitness2/Pods-AnywhereFitness2.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,9 +75,9 @@
 		31711CEC25390103003BF8DE /* AnywhereFitness2 */ = {
 			isa = PBXGroup;
 			children = (
+				4679C563253919570070C8FC /* View Controllers */,
 				31711CED25390103003BF8DE /* AppDelegate.swift */,
 				31711CEF25390103003BF8DE /* SceneDelegate.swift */,
-				31711CF125390103003BF8DE /* ViewController.swift */,
 				31711CF325390103003BF8DE /* Main.storyboard */,
 				31711CF925390104003BF8DE /* Assets.xcassets */,
 				31711CFB25390104003BF8DE /* LaunchScreen.storyboard */,
@@ -83,6 +85,15 @@
 				31711CF625390103003BF8DE /* AnywhereFitness2.xcdatamodeld */,
 			);
 			path = AnywhereFitness2;
+			sourceTree = "<group>";
+		};
+		4679C563253919570070C8FC /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4679C565253919720070C8FC /* SignUpViewController.swift */,
+				4679C56D25391E1E0070C8FC /* LoginViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 		E13C75E3A88307712342B17E /* Pods */ = {
@@ -210,10 +221,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31711CF225390103003BF8DE /* ViewController.swift in Sources */,
 				31711CEE25390103003BF8DE /* AppDelegate.swift in Sources */,
 				31711CF825390103003BF8DE /* AnywhereFitness2.xcdatamodeld in Sources */,
 				31711CF025390103003BF8DE /* SceneDelegate.swift in Sources */,
+				4679C56E25391E1E0070C8FC /* LoginViewController.swift in Sources */,
+				4679C566253919720070C8FC /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
