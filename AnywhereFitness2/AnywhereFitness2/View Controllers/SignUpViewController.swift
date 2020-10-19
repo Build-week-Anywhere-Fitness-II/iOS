@@ -25,7 +25,6 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var usernameTextfield: UITextField!
     @IBOutlet weak var emailTextfield: UITextField!
     @IBOutlet weak var passwordTextfield: UITextField!
-    @IBOutlet weak var aboutMeTextview: UITextView!
     @IBOutlet weak var signInButton: UIButton!
     
     //MARK: - Lifecycle

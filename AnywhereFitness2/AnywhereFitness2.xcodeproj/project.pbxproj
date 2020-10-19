@@ -14,11 +14,12 @@
 		31711CF825390103003BF8DE /* AnywhereFitness2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 31711CF625390103003BF8DE /* AnywhereFitness2.xcdatamodeld */; };
 		31711CFA25390104003BF8DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31711CF925390104003BF8DE /* Assets.xcassets */; };
 		31711CFD25390104003BF8DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31711CFB25390104003BF8DE /* LaunchScreen.storyboard */; };
+		464DA610253BD8F3001123FF /* CodeDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464DA60F253BD8F2001123FF /* CodeDataStack.swift */; };
 		4679C566253919720070C8FC /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4679C565253919720070C8FC /* SignUpViewController.swift */; };
 		4679C56E25391E1E0070C8FC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4679C56D25391E1E0070C8FC /* LoginViewController.swift */; };
 		4679C59C253948700070C8FC /* Models.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4679C59A253948700070C8FC /* Models.xcdatamodeld */; };
 		4679C59F25394BB90070C8FC /* CourseRepresentaion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4679C59E25394BB90070C8FC /* CourseRepresentaion.swift */; };
-		4679C5A225394BD40070C8FC /* UserRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4679C5A125394BD40070C8FC /* UserRepresentation.swift */; };
+		4679C5A225394BD40070C8FC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4679C5A125394BD40070C8FC /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,11 +32,12 @@
 		31711CF925390104003BF8DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31711CFC25390104003BF8DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		31711CFE25390104003BF8DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		464DA60F253BD8F2001123FF /* CodeDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeDataStack.swift; sourceTree = "<group>"; };
 		4679C565253919720070C8FC /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		4679C56D25391E1E0070C8FC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4679C59B253948700070C8FC /* Models.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Models.xcdatamodel; sourceTree = "<group>"; };
 		4679C59E25394BB90070C8FC /* CourseRepresentaion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseRepresentaion.swift; sourceTree = "<group>"; };
-		4679C5A125394BD40070C8FC /* UserRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepresentation.swift; sourceTree = "<group>"; };
+		4679C5A125394BD40070C8FC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		86E9C3CA94C7FB3556290FE9 /* Pods_AnywhereFitness2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnywhereFitness2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFB4A3B6052BA4D88B3D213B /* Pods-AnywhereFitness2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnywhereFitness2.debug.xcconfig"; path = "Target Support Files/Pods-AnywhereFitness2/Pods-AnywhereFitness2.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,7 +110,8 @@
 			children = (
 				4679C59A253948700070C8FC /* Models.xcdatamodeld */,
 				4679C59E25394BB90070C8FC /* CourseRepresentaion.swift */,
-				4679C5A125394BD40070C8FC /* UserRepresentation.swift */,
+				4679C5A125394BD40070C8FC /* User.swift */,
+				464DA60F253BD8F2001123FF /* CodeDataStack.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -242,8 +245,9 @@
 				31711CF025390103003BF8DE /* SceneDelegate.swift in Sources */,
 				4679C59C253948700070C8FC /* Models.xcdatamodeld in Sources */,
 				4679C59F25394BB90070C8FC /* CourseRepresentaion.swift in Sources */,
-				4679C5A225394BD40070C8FC /* UserRepresentation.swift in Sources */,
+				4679C5A225394BD40070C8FC /* User.swift in Sources */,
 				4679C56E25391E1E0070C8FC /* LoginViewController.swift in Sources */,
+				464DA610253BD8F3001123FF /* CodeDataStack.swift in Sources */,
 				4679C566253919720070C8FC /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
