@@ -19,6 +19,7 @@ struct CourseRepresentation: Decodable {
     let skillLevel: String
     let maxCourseSize: Int
     let image: String?
+    let courseDetails: String?
 }
 
 
