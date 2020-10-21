@@ -10,7 +10,7 @@ import Foundation
 
 
 struct CourseRepresentation: Decodable {
-    let id: Int?
+    let id: Int
     let time: Date
     let courseTitle: String
     let courseType: String
@@ -18,8 +18,8 @@ struct CourseRepresentation: Decodable {
     let location: String
     let skillLevel: String
     let maxCourseSize: Int
-    let image: String?
-    let courseDetails: String?
+    let image: String
+    let courseDetails: String
 }
 
 

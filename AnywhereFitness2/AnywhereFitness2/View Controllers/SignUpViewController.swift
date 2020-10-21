@@ -25,7 +25,9 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var usernameTextfield: UITextField!
     @IBOutlet weak var emailTextfield: UITextField!
     @IBOutlet weak var passwordTextfield: UITextField!
-    @IBOutlet weak var signInButton: UIButton!
+    @IBOutlet weak var signUpButton: UIButton!
+    @IBOutlet weak var userImage: UIImageView!
+    
     
     //MARK: - Lifecycle
     
@@ -36,8 +38,11 @@ class SignUpViewController: UIViewController {
     }
     
     //MARK: - IBActions
+    @IBAction func AddPhotoButtonTapped(_ sender: Any) {
+        
+    }
     
-    @IBAction func SignInButtonTapped(_ sender: Any) {
+    @IBAction func SignUpButtonTapped(_ sender: Any) {
         
     }
     

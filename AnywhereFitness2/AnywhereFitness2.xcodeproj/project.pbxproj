@@ -14,6 +14,14 @@
 		31711CF825390103003BF8DE /* AnywhereFitness2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 31711CF625390103003BF8DE /* AnywhereFitness2.xcdatamodeld */; };
 		31711CFA25390104003BF8DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31711CF925390104003BF8DE /* Assets.xcassets */; };
 		31711CFD25390104003BF8DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31711CFB25390104003BF8DE /* LaunchScreen.storyboard */; };
+		4617BC2E253F8EF9000F09C1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4617BC2D253F8EF9000F09C1 /* HomeViewController.swift */; };
+		4617BC31253F8F9C000F09C1 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4617BC30253F8F9C000F09C1 /* EditProfileViewController.swift */; };
+		4617BC34253F9199000F09C1 /* MyClassesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4617BC33253F9199000F09C1 /* MyClassesTableViewController.swift */; };
+		4617BC37253F9224000F09C1 /* ClassDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4617BC36253F9224000F09C1 /* ClassDetailViewController.swift */; };
+		4617BC3D253FACFC000F09C1 /* CourseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4617BC3C253FACFC000F09C1 /* CourseTableViewCell.swift */; };
+		4617BC41253FAD22000F09C1 /* CourseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4617BC40253FAD22000F09C1 /* CourseCollectionViewCell.swift */; };
+		4617BC44253FADBA000F09C1 /* MyClassTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4617BC43253FADBA000F09C1 /* MyClassTableViewCell.swift */; };
+		4617BC47253FB7FD000F09C1 /* Course+Convinience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4617BC46253FB7FD000F09C1 /* Course+Convinience.swift */; };
 		464DA610253BD8F3001123FF /* CodeDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464DA60F253BD8F2001123FF /* CodeDataStack.swift */; };
 		4679C566253919720070C8FC /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4679C565253919720070C8FC /* SignUpViewController.swift */; };
 		4679C56E25391E1E0070C8FC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4679C56D25391E1E0070C8FC /* LoginViewController.swift */; };
@@ -32,6 +40,14 @@
 		31711CF925390104003BF8DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31711CFC25390104003BF8DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		31711CFE25390104003BF8DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4617BC2D253F8EF9000F09C1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		4617BC30253F8F9C000F09C1 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		4617BC33253F9199000F09C1 /* MyClassesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClassesTableViewController.swift; sourceTree = "<group>"; };
+		4617BC36253F9224000F09C1 /* ClassDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassDetailViewController.swift; sourceTree = "<group>"; };
+		4617BC3C253FACFC000F09C1 /* CourseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTableViewCell.swift; sourceTree = "<group>"; };
+		4617BC40253FAD22000F09C1 /* CourseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCollectionViewCell.swift; sourceTree = "<group>"; };
+		4617BC43253FADBA000F09C1 /* MyClassTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClassTableViewCell.swift; sourceTree = "<group>"; };
+		4617BC46253FB7FD000F09C1 /* Course+Convinience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Course+Convinience.swift"; sourceTree = "<group>"; };
 		464DA60F253BD8F2001123FF /* CodeDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeDataStack.swift; sourceTree = "<group>"; };
 		4679C565253919720070C8FC /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		4679C56D25391E1E0070C8FC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +99,7 @@
 		31711CEC25390103003BF8DE /* AnywhereFitness2 */ = {
 			isa = PBXGroup;
 			children = (
+				4617BC39253FABE1000F09C1 /* Views */,
 				4679C5992539485D0070C8FC /* Models */,
 				4679C563253919570070C8FC /* View Controllers */,
 				31711CED25390103003BF8DE /* AppDelegate.swift */,
@@ -96,11 +113,41 @@
 			path = AnywhereFitness2;
 			sourceTree = "<group>";
 		};
+		4617BC39253FABE1000F09C1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4617BC3B253FAC5A000F09C1 /* CollectionViewCells */,
+				4617BC3A253FAC21000F09C1 /* TableViewCells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4617BC3A253FAC21000F09C1 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				4617BC3C253FACFC000F09C1 /* CourseTableViewCell.swift */,
+				4617BC43253FADBA000F09C1 /* MyClassTableViewCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		4617BC3B253FAC5A000F09C1 /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				4617BC40253FAD22000F09C1 /* CourseCollectionViewCell.swift */,
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
 		4679C563253919570070C8FC /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				4679C565253919720070C8FC /* SignUpViewController.swift */,
 				4679C56D25391E1E0070C8FC /* LoginViewController.swift */,
+				4617BC2D253F8EF9000F09C1 /* HomeViewController.swift */,
+				4617BC30253F8F9C000F09C1 /* EditProfileViewController.swift */,
+				4617BC33253F9199000F09C1 /* MyClassesTableViewController.swift */,
+				4617BC36253F9224000F09C1 /* ClassDetailViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -112,6 +159,7 @@
 				4679C59E25394BB90070C8FC /* CourseRepresentaion.swift */,
 				4679C5A125394BD40070C8FC /* User.swift */,
 				464DA60F253BD8F2001123FF /* CodeDataStack.swift */,
+				4617BC46253FB7FD000F09C1 /* Course+Convinience.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -240,11 +288,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4617BC31253F8F9C000F09C1 /* EditProfileViewController.swift in Sources */,
 				31711CEE25390103003BF8DE /* AppDelegate.swift in Sources */,
 				31711CF825390103003BF8DE /* AnywhereFitness2.xcdatamodeld in Sources */,
+				4617BC41253FAD22000F09C1 /* CourseCollectionViewCell.swift in Sources */,
+				4617BC44253FADBA000F09C1 /* MyClassTableViewCell.swift in Sources */,
+				4617BC37253F9224000F09C1 /* ClassDetailViewController.swift in Sources */,
 				31711CF025390103003BF8DE /* SceneDelegate.swift in Sources */,
+				4617BC34253F9199000F09C1 /* MyClassesTableViewController.swift in Sources */,
+				4617BC3D253FACFC000F09C1 /* CourseTableViewCell.swift in Sources */,
 				4679C59C253948700070C8FC /* Models.xcdatamodeld in Sources */,
 				4679C59F25394BB90070C8FC /* CourseRepresentaion.swift in Sources */,
+				4617BC2E253F8EF9000F09C1 /* HomeViewController.swift in Sources */,
+				4617BC47253FB7FD000F09C1 /* Course+Convinience.swift in Sources */,
 				4679C5A225394BD40070C8FC /* User.swift in Sources */,
 				4679C56E25391E1E0070C8FC /* LoginViewController.swift in Sources */,
 				464DA610253BD8F3001123FF /* CodeDataStack.swift in Sources */,
