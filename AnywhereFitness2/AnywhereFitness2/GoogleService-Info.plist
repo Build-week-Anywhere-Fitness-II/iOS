@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>220168634776-mfmvssdt5ll4f55jmai066svmk6mdg8u.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.220168634776-mfmvssdt5ll4f55jmai066svmk6mdg8u</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBd_gm66NIG7Fc6t6OJGjC9rlBw6yNFdJs</string>
+	<key>GCM_SENDER_ID</key>
+	<string>220168634776</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.john.AnywhereFitness2</string>
+	<key>PROJECT_ID</key>
+	<string>anywherefitness2-ea6b8</string>
+	<key>STORAGE_BUCKET</key>
+	<string>anywherefitness2-ea6b8.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:220168634776:ios:9075e2fee2dae9c687ebed</string>
+	<key>DATABASE_URL</key>
+	<string>https://anywherefitness2-ea6b8.firebaseio.com</string>
+</dict>
+</plist>
