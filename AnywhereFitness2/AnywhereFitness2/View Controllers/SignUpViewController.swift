@@ -7,6 +7,10 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
+import FirebaseStorage
+import FirebaseDatabase
 
 class SignUpViewController: UIViewController {
 
@@ -43,6 +47,23 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func SignUpButtonTapped(_ sender: Any) {
+      guard
+            let emailText = emailTextfield.text,
+            let passwordText = passwordTextfield.text else {
+            return }
+        
+        Auth.auth().createUser(withEmail: emailText, password: passwordText) { (result, error) in
+            if error == nil {
+              // 3
+              Auth.auth().signIn(withEmail: emailText,
+                                 password: passwordText)
+            }
+
+            
+        }
+        
+    
+        
         
     }
     

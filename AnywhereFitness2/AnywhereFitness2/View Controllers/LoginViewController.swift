@@ -7,6 +7,10 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
+import FirebaseStorage
+import FirebaseDatabase
 
 class LoginViewController: UIViewController {
     
@@ -21,6 +25,28 @@ class LoginViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    
+    @IBAction func loginTapped(_ sender: UIButton) {
+        guard let emailText = usernameTextfield.text, let passwordText = passwordTextfield.text else {
+            return }
+        Auth.auth().signIn(withEmail: emailText, password: passwordText) { (result, error) in
+                
+            if error == nil {
+                self.performSegue(withIdentifier: "login", sender: sender)
+                print("Success")
+            } else {
+                print(error)
+                print("Unable to login")
+                let alert = UIAlertController()
+                let action = UIAlertAction(title: "Unable to sign in", style: .default, handler: nil)
+                alert.addAction(action)
+                self.present(alert, animated: true, completion: nil)
+            }
+        
+        }
+    }
+    
     
 
     /*

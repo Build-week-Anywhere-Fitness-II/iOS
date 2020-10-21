@@ -14,6 +14,8 @@
 		31711CF825390103003BF8DE /* AnywhereFitness2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 31711CF625390103003BF8DE /* AnywhereFitness2.xcdatamodeld */; };
 		31711CFA25390104003BF8DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31711CF925390104003BF8DE /* Assets.xcassets */; };
 		31711CFD25390104003BF8DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31711CFB25390104003BF8DE /* LaunchScreen.storyboard */; };
+		31B7EC75253FDEC400F48F98 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 31B7EC74253FDEC400F48F98 /* GoogleService-Info.plist */; };
+		31B7EC78253FE0F800F48F98 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B7EC77253FE0F800F48F98 /* LoginController.swift */; };
 		4617BC2E253F8EF9000F09C1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4617BC2D253F8EF9000F09C1 /* HomeViewController.swift */; };
 		4617BC31253F8F9C000F09C1 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4617BC30253F8F9C000F09C1 /* EditProfileViewController.swift */; };
 		4617BC34253F9199000F09C1 /* MyClassesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4617BC33253F9199000F09C1 /* MyClassesTableViewController.swift */; };
@@ -40,6 +42,9 @@
 		31711CF925390104003BF8DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31711CFC25390104003BF8DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		31711CFE25390104003BF8DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31B7EC74253FDEC400F48F98 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		31B7EC77253FE0F800F48F98 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		31B7EC79253FE5E600F48F98 /* AnywhereFitness2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AnywhereFitness2.entitlements; sourceTree = "<group>"; };
 		4617BC2D253F8EF9000F09C1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4617BC30253F8F9C000F09C1 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		4617BC33253F9199000F09C1 /* MyClassesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClassesTableViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +104,8 @@
 		31711CEC25390103003BF8DE /* AnywhereFitness2 */ = {
 			isa = PBXGroup;
 			children = (
+				31B7EC79253FE5E600F48F98 /* AnywhereFitness2.entitlements */,
+				31B7EC76253FE0B800F48F98 /* Model Controllers */,
 				4617BC39253FABE1000F09C1 /* Views */,
 				4679C5992539485D0070C8FC /* Models */,
 				4679C563253919570070C8FC /* View Controllers */,
@@ -108,9 +115,18 @@
 				31711CF925390104003BF8DE /* Assets.xcassets */,
 				31711CFB25390104003BF8DE /* LaunchScreen.storyboard */,
 				31711CFE25390104003BF8DE /* Info.plist */,
+				31B7EC74253FDEC400F48F98 /* GoogleService-Info.plist */,
 				31711CF625390103003BF8DE /* AnywhereFitness2.xcdatamodeld */,
 			);
 			path = AnywhereFitness2;
+			sourceTree = "<group>";
+		};
+		31B7EC76253FE0B800F48F98 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				31B7EC77253FE0F800F48F98 /* LoginController.swift */,
+			);
+			path = "Model Controllers";
 			sourceTree = "<group>";
 		};
 		4617BC39253FABE1000F09C1 /* Views */ = {
@@ -234,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				31711CFD25390104003BF8DE /* LaunchScreen.storyboard in Resources */,
+				31B7EC75253FDEC400F48F98 /* GoogleService-Info.plist in Resources */,
 				31711CFA25390104003BF8DE /* Assets.xcassets in Resources */,
 				31711CF525390103003BF8DE /* Main.storyboard in Resources */,
 			);
@@ -301,6 +318,7 @@
 				4679C59F25394BB90070C8FC /* CourseRepresentaion.swift in Sources */,
 				4617BC2E253F8EF9000F09C1 /* HomeViewController.swift in Sources */,
 				4617BC47253FB7FD000F09C1 /* Course+Convinience.swift in Sources */,
+				31B7EC78253FE0F800F48F98 /* LoginController.swift in Sources */,
 				4679C5A225394BD40070C8FC /* User.swift in Sources */,
 				4679C56E25391E1E0070C8FC /* LoginViewController.swift in Sources */,
 				464DA610253BD8F3001123FF /* CodeDataStack.swift in Sources */,
@@ -449,6 +467,7 @@
 			baseConfigurationReference = AFB4A3B6052BA4D88B3D213B /* Pods-AnywhereFitness2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AnywhereFitness2/AnywhereFitness2.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S6V29A8HUW;
 				INFOPLIST_FILE = AnywhereFitness2/Info.plist;
@@ -468,6 +487,7 @@
 			baseConfigurationReference = 0968A786DA10B229F3FCF300 /* Pods-AnywhereFitness2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AnywhereFitness2/AnywhereFitness2.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S6V29A8HUW;
 				INFOPLIST_FILE = AnywhereFitness2/Info.plist;
