@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CourseCollectionViewCell" id="U8n-xn-K1k" customClass="CourseCollectionViewCell" customModule="AnywhereFitness2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="276" height="173"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="RLI-5h-gBE">
+                <rect key="frame" x="0.0" y="0.0" width="276" height="173"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iRS-nS-n7a">
+                        <rect key="frame" x="0.0" y="0.0" width="276" height="173"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yoga1" translatesAutoresizingMaskIntoConstraints="NO" id="bCt-xj-cxu">
+                                <rect key="frame" x="0.0" y="0.0" width="276" height="173"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aKo-BL-Gxq">
+                                <rect key="frame" x="0.0" y="0.0" width="276" height="173"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beginners Yoga" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="raj-k9-9mw">
+                                        <rect key="frame" x="30" y="30" width="216" height="113"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.057844520830000003" green="0.18047097840000001" blue="0.18304164549999999" alpha="0.70575797870000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="raj-k9-9mw" secondAttribute="bottom" constant="30" id="aFt-of-98R"/>
+                                    <constraint firstAttribute="trailing" secondItem="raj-k9-9mw" secondAttribute="trailing" constant="30" id="aoZ-nc-KmQ"/>
+                                    <constraint firstItem="raj-k9-9mw" firstAttribute="leading" secondItem="aKo-BL-Gxq" secondAttribute="leading" constant="30" id="d7o-Bc-Hna"/>
+                                    <constraint firstItem="raj-k9-9mw" firstAttribute="top" secondItem="aKo-BL-Gxq" secondAttribute="top" constant="30" id="hsq-iU-eB5"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="bCt-xj-cxu" secondAttribute="bottom" id="4fQ-Dh-GUA"/>
+                            <constraint firstAttribute="bottom" secondItem="aKo-BL-Gxq" secondAttribute="bottom" id="6xH-1T-ci9"/>
+                            <constraint firstItem="aKo-BL-Gxq" firstAttribute="top" secondItem="iRS-nS-n7a" secondAttribute="top" id="D2A-SH-uIK"/>
+                            <constraint firstAttribute="trailing" secondItem="bCt-xj-cxu" secondAttribute="trailing" id="GiH-fl-MAG"/>
+                            <constraint firstItem="aKo-BL-Gxq" firstAttribute="leading" secondItem="iRS-nS-n7a" secondAttribute="leading" id="JDM-RP-Txi"/>
+                            <constraint firstAttribute="trailing" secondItem="aKo-BL-Gxq" secondAttribute="trailing" id="iZA-wt-VcB"/>
+                            <constraint firstItem="bCt-xj-cxu" firstAttribute="top" secondItem="iRS-nS-n7a" secondAttribute="top" id="mBM-hw-vdA"/>
+                            <constraint firstItem="bCt-xj-cxu" firstAttribute="leading" secondItem="iRS-nS-n7a" secondAttribute="leading" id="qaU-kh-dvT"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="iRS-nS-n7a" firstAttribute="leading" secondItem="RLI-5h-gBE" secondAttribute="leading" id="1un-g0-y49"/>
+                    <constraint firstAttribute="bottom" secondItem="iRS-nS-n7a" secondAttribute="bottom" id="BjT-TL-xcH"/>
+                    <constraint firstItem="iRS-nS-n7a" firstAttribute="top" secondItem="RLI-5h-gBE" secondAttribute="top" id="DLe-ol-cbg"/>
+                    <constraint firstAttribute="trailing" secondItem="iRS-nS-n7a" secondAttribute="trailing" id="oci-rS-CPI"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="276" height="173"/>
+            <connections>
+                <outlet property="collectionViewImage" destination="bCt-xj-cxu" id="bv6-h2-OzI"/>
+                <outlet property="collectionViewLabel" destination="raj-k9-9mw" id="kZr-rB-T7p"/>
+            </connections>
+            <point key="canvasLocation" x="214.49275362318843" y="42.522321428571423"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="yoga1" width="6000" height="2400"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

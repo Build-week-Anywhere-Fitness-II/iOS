@@ -6,67 +6,87 @@
 //  Copyright © 2020 John McCants. All rights reserved.
 //
 
-import Foundation
+import UIKit
 import CoreData
 
 
 extension Course {
     
+    // Computed variable -> representation
+    var representation: CourseRepresentation? {
+        guard let identifier = identifier ?? 0,
+              let dateTime = dateTime,
+              let courseTitle = courseTitle,
+              let courseType = courseType,
+              let duration = duration,
+              let location = location,
+              let skillLevel = skillLevel,
+              let maxCourseSize = maxCourseSize ?? 0,
+              let image = image,
+              let courseDetails = courseDetails,
+              let currentCourseSize = currentCourseSize ?? 0,
+              let instructorId = instructorId ?? 0 else { return nil }
+        
+        return  CourseRepresentation(identifier: identifier, dateTime: dateTime, courseTitle: courseTitle, courseType: courseType, duration: duration, location: location, skillLevel: skillLevel, maxCourseSize: maxCourseSize, image: image, courseDetails: courseDetails, currentCourseSize: currentCourseSize, instructorId: instructorId)
+        
+
+
+    }
+    
     @discardableResult
-    convenience init(id: Int,
-                     time: Date,
-                     courseDetails: String,
+    convenience init(identifier: Int64 = 0,
+                     dateTime: Date,
                      courseTitle: String,
                      courseType: String,
-                     durration: String,
+                     duration: String,
                      image: String,
                      location: String,
                      skillLevel: String,
-                     maxCourseSize: Int,
+                     maxCourseSize: Int64,
+                     currentCourseSize: Int64,
+                     courseDetails: String,
+                     instructorId: Int64 = 0,
                      context: NSManagedObjectContext = CoreDataStack.shared.mainContext) {
-       
+        
         self.init(context: context)
-        self.id = Int64(id)
-        self.time = time
-        self.courseDetails = courseDetails
+        self.identifier = Int64(identifier)
+        self.dateTime = dateTime
         self.courseTitle = courseTitle
-        self.durration = durration
+        self.courseType = courseType
+        self.duration = duration
         self.image = image
         self.location = location
         self.skillLevel = skillLevel
         self.maxCourseSize = Int64(maxCourseSize)
+        self.currentCourseSize = Int64(currentCourseSize)
+        self.courseDetails = courseDetails
+        self.instructorId = Int64(instructorId)
     }
     
-//        // Representation convinience init
+    convenience init?(representation: CourseRepresentation, context: NSManagedObjectContext = CoreDataStack.shared.mainContext) {
+        self.init(identifier: Int64(representation.identifier),
+                  dateTime: representation.dateTime,
+                  courseTitle: representation.courseTitle,
+                  courseType: representation.courseType,
+                  duration: representation.duration,
+                  image: representation.image,
+                  location: representation.location,
+                  skillLevel: representation.skillLevel,
+                  maxCourseSize: Int64(representation.maxCourseSize),
+                  currentCourseSize: Int64(representation.currentCourseSize),
+                  courseDetails: representation.courseDetails,
+                  instructorId: Int64(representation.instructorId),
+                  context: context)
+        
+    }
+    
+    // Representation convinience init
 //    @discardableResult
-//    convenience init(representation: CourseRepresentation) {
-//        self.init(id: representation.id,
-//                  time: representation.time,
-//                  courseDetails: representation.courseDetails,
-//                  courseTitle: representation.courseTitle,
-//                  courseType: representation.courseType,
-//                  durration: representation.durration,
-//                  image: representation.image,
-//                  location: representation.location,
-//                  skillLevel: representation.skillLevel,
-//                  maxCourseSize: representation.maxCourseSize)
-//    }
+//    convenience init?(representation: CourseRepresentation, context: NSManagedObjectContext = CoreDataStack.shared.mainContext) {
 //
-//    // Computed variable -> representation
-//    var representation: CourseRepresentation? {
-//        guard let id = id,
-//              let courseTitle = courseTitle,
-//              let location = location else  {return nil}
+//        self.init(
 //
-//        return CourseRepresentation(id = Int(id),
-//                                    time = time,
-//                                    courseDetails = courseDetails,
-//                                    courseTitle = courseTitle,
-//                                    durration = durration,
-//                                    image = image,
-//                                    location = location,
-//                                    skillLevel = skillLevel,
-//                                    maxCourseSize = Int(maxCourseSize))
 //    }
-//}
+
 }
+

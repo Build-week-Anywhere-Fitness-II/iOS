@@ -8,19 +8,19 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+
+    
     
     //MARK: - Properties
     var courses = [Course]()
     var currentUser : User?
 
     //MARK: - IBOutlets
-    //User Info
     @IBOutlet weak var userImage: UIImageView!
     @IBOutlet weak var usernameLabel: UILabel!
-    //Random Quote
+    @IBOutlet weak var usernameTextField: UILabel!
     @IBOutlet weak var inspoQuoteTextField: UILabel!
-    //TableView
     @IBOutlet weak var tableView: UITableView!
 
     //MARK: - Lifecycle
@@ -61,19 +61,86 @@ class HomeViewController: UIViewController {
                       }
         
         }
-          
-    
-    
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        
+        courses.append(Course(dateTime: Date(),
+                              courseTitle: "Hot Yoga",
+                              courseType: "Yoga",
+                              duration: "5 Hours",
+                              image: "yoga2",
+                              location: "Tallahassee",
+                              skillLevel: "Advanced",
+                              maxCourseSize: 25,
+                              currentCourseSize: 1,
+                              courseDetails: "Lets make it HOT"))
+        courses.append(Course(dateTime: Date(),
+                              courseTitle: "Cold Yoga",
+                              courseType: "Yoga",
+                              duration: "5 Hours",
+                              image: "yoga2",
+                              location: "Tallahassee",
+                              skillLevel: "Advanced",
+                              maxCourseSize: 25,
+                              currentCourseSize: 1,
+                              courseDetails: "Lets make it HOT"))
+        courses.append(Course(dateTime: Date(),
+                              courseTitle: "Med Yoga",
+                              courseType: "Yoga",
+                              duration: "5 Hours",
+                              image: "yoga2",
+                              location: "Tallahassee",
+                              skillLevel: "Advanced",
+                              maxCourseSize: 25,
+                              currentCourseSize: 1,
+                              courseDetails: "Lets make it HOT"))
+        courses.append(Course(dateTime: Date(),
+                              courseTitle: "Power Hour",
+                              courseType: "Yoga",
+                              duration: "5 Hours",
+                              image: "yoga2",
+                              location: "Tallahassee",
+                              skillLevel: "Advanced",
+                              maxCourseSize: 25,
+                              currentCourseSize: 1,
+                              courseDetails: "Lets make it HOT"))
+        courses.append(Course(dateTime: Date(),
+                              courseTitle: "Baby Yoga",
+                              courseType: "Yoga",
+                              duration: "5 Hours",
+                              image: "yoga2",
+                              location: "Tallahassee",
+                              skillLevel: "Advanced",
+                              maxCourseSize: 25,
+                              currentCourseSize: 1,
+                              courseDetails: "Lets make it HOT"))
+        courses.append(Course(dateTime: Date(),
+                              courseTitle: "Yoda Yoga",
+                              courseType: "Yoga",
+                              duration: "5 Hours",
+                              image: "yoga2",
+                              location: "Tallahassee",
+                              skillLevel: "Advanced",
+                              maxCourseSize: 25,
+                              currentCourseSize: 1,
+                              courseDetails: "Lets make it HOT"))
+        
+        tableView.register(CourseTableViewCell.nib(), forCellReuseIdentifier: CourseTableViewCell.identifier)
+        tableView.delegate = self
+        tableView.dataSource = self
     }
-    */
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print(courses)
+        return courses.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: CourseTableViewCell.identifier, for: indexPath) as! CourseTableViewCell
+        cell.configure(with: courses)
+        return cell
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 200
+    }
+
 
 }
