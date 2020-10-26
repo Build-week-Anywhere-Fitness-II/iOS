@@ -21,9 +21,6 @@ class EditProfileViewController: UIViewController, UINavigationControllerDelegat
     var photoSelected: Bool = false
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     private var profileUpdateQueue = OperationQueue()
-    
-    
-    let myTimer : Timer = Timer.scheduledTimer(timeInterval: 4, target: self, selector: #selector(fire), userInfo: nil, repeats: false)
 
     //MARK: - Lifecycle
     override func viewDidLoad() {
@@ -31,7 +28,6 @@ class EditProfileViewController: UIViewController, UINavigationControllerDelegat
         currentUser()
         updateImage()
         updateViews()
-        myTimer.invalidate()
         // Do any additional setup after loading the view.
     }
     
@@ -110,10 +106,6 @@ class EditProfileViewController: UIViewController, UINavigationControllerDelegat
         activityIndicator.isHidden = true
         }
     
-    @objc func fire()
-    {
-        print("FIRE!!!")
-    }
     /*
     // MARK: - Navigation
 
