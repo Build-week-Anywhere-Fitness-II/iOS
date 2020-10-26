@@ -128,6 +128,10 @@
 				31711CFE25390104003BF8DE /* Info.plist */,
 				31B7EC74253FDEC400F48F98 /* GoogleService-Info.plist */,
 				31711CF625390103003BF8DE /* AnywhereFitness2.xcdatamodeld */,
+				4639CBDD254793B6000FAE27 /* Resources */,
+				4679C563253919570070C8FC /* View Controllers */,
+				4617BC39253FABE1000F09C1 /* Views */,
+				4679C5992539485D0070C8FC /* Models */,
 			);
 			path = AnywhereFitness2;
 			sourceTree = "<group>";
@@ -144,6 +148,7 @@
 		4617BC39253FABE1000F09C1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				31711CF325390103003BF8DE /* Main.storyboard */,
 				4617BC3B253FAC5A000F09C1 /* CollectionViewCells */,
 				4617BC3A253FAC21000F09C1 /* TableViewCells */,
 			);
@@ -169,6 +174,18 @@
 			path = CollectionViewCells;
 			sourceTree = "<group>";
 		};
+		4639CBDD254793B6000FAE27 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				31711CED25390103003BF8DE /* AppDelegate.swift */,
+				31711CEF25390103003BF8DE /* SceneDelegate.swift */,
+				31711CFB25390104003BF8DE /* LaunchScreen.storyboard */,
+				31711CF925390104003BF8DE /* Assets.xcassets */,
+				31711CFE25390104003BF8DE /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		4679C563253919570070C8FC /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,6 +203,7 @@
 		4679C5992539485D0070C8FC /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				31711CF625390103003BF8DE /* AnywhereFitness2.xcdatamodeld */,
 				4679C59A253948700070C8FC /* Models.xcdatamodeld */,
 				4679C59E25394BB90070C8FC /* CourseRepresentaion.swift */,
 				4679C5A125394BD40070C8FC /* User.swift */,
@@ -193,15 +211,6 @@
 				4617BC46253FB7FD000F09C1 /* Course+Convinience.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		46D3325725411C6A003D8365 /* Storyboards */ = {
-			isa = PBXGroup;
-			children = (
-				31711CFB25390104003BF8DE /* LaunchScreen.storyboard */,
-				31711CF325390103003BF8DE /* Main.storyboard */,
-			);
-			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		E13C75E3A88307712342B17E /* Pods */ = {
