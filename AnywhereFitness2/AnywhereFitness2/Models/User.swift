@@ -9,10 +9,10 @@
 import Foundation
 
 struct User: Codable {
-    let id: Int
+    let uid: String
     let isInstructor: Bool
     let name: String
-    let password: String
     let username: String
-    let image: String
+    let image: URL
+    let email: String
 }
