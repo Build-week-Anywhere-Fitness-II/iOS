@@ -9,20 +9,27 @@
 import UIKit
 
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+    
     
     
     //MARK: - Properties
     var courses = [Course]()
     var currentUser : User?
-
+    var categories = ["Yoga", "Weight Lifting", "Cross Fit", "Boxing", "Martial Arts", "Other" ]
+    var yogaCourses: [Course] = []
+    var weightLiftingCourses: [Course] = []
+    var crossFitCourses: [Course] = []
+    var boxingCourses: [Course] = []
+    var martialArtsCourses: [Course] = []
+    var otherCourses: [Course] = []
+    
     //MARK: - IBOutlets
     @IBOutlet weak var userImage: UIImageView!
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var usernameTextField: UILabel!
     @IBOutlet weak var inspoQuoteTextField: UILabel!
     @IBOutlet weak var tableView: UITableView!
-
+    
     //MARK: - Lifecycle
     
     override func viewDidLoad() {
@@ -61,10 +68,10 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                       }
         
         }
-        
+    
         courses.append(Course(dateTime: Date(),
-                              courseTitle: "Hot Yoga",
-                              courseType: "Yoga",
+                              courseTitle: "Other",
+                              courseType: "Other",
                               duration: "5 Hours",
                               image: "yoga2",
                               location: "Tallahassee",
@@ -83,8 +90,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                               currentCourseSize: 1,
                               courseDetails: "Lets make it HOT"))
         courses.append(Course(dateTime: Date(),
-                              courseTitle: "Med Yoga",
-                              courseType: "Yoga",
+                              courseTitle: "Weight Lifting",
+                              courseType: "Weight Lifting",
                               duration: "5 Hours",
                               image: "yoga2",
                               location: "Tallahassee",
@@ -93,8 +100,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                               currentCourseSize: 1,
                               courseDetails: "Lets make it HOT"))
         courses.append(Course(dateTime: Date(),
-                              courseTitle: "Power Hour",
-                              courseType: "Yoga",
+                              courseTitle: "Weight Lifting",
+                              courseType: "Weight Lifting",
                               duration: "5 Hours",
                               image: "yoga2",
                               location: "Tallahassee",
@@ -103,8 +110,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                               currentCourseSize: 1,
                               courseDetails: "Lets make it HOT"))
         courses.append(Course(dateTime: Date(),
-                              courseTitle: "Baby Yoga",
-                              courseType: "Yoga",
+                              courseTitle: "Cross Fit",
+                              courseType: "Cross Fit",
                               duration: "5 Hours",
                               image: "yoga2",
                               location: "Tallahassee",
@@ -113,8 +120,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                               currentCourseSize: 1,
                               courseDetails: "Lets make it HOT"))
         courses.append(Course(dateTime: Date(),
-                              courseTitle: "Yoda Yoga",
-                              courseType: "Yoga",
+                              courseTitle: "Boxing",
+                              courseType: "Boxing",
                               duration: "5 Hours",
                               image: "yoga2",
                               location: "Tallahassee",
@@ -122,25 +129,82 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
                               maxCourseSize: 25,
                               currentCourseSize: 1,
                               courseDetails: "Lets make it HOT"))
-        
+        organizeCourses()
         tableView.register(CourseTableViewCell.nib(), forCellReuseIdentifier: CourseTableViewCell.identifier)
         tableView.delegate = self
         tableView.dataSource = self
     }
     
+    func organizeCourses() {
+        for course in courses {
+            if course.courseType == "Yoga"{
+                yogaCourses.append(course)
+            }
+            if course.courseType == "Weight Lifting"{
+                weightLiftingCourses.append(course)
+            }
+            if course.courseType == "Cross Fit"{
+                crossFitCourses.append(course)
+            }
+            if course.courseType == "Boxing"{
+                boxingCourses.append(course)
+            }
+            if course.courseType == "Martial Arts"{
+                martialArtsCourses.append(course)
+            }
+            if course.courseType == "Other"{
+                otherCourses.append(course)
+            }
+            
+        }
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return categories.count
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         print(courses)
-        return courses.count
+        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: CourseTableViewCell.identifier, for: indexPath) as! CourseTableViewCell
         cell.configure(with: courses)
+        if indexPath.section == 0 {
+            cell.courses = yogaCourses
+            cell.courseTypeLabel.text = "Yoga"
+            
+        } else if indexPath.section == 1 {
+            cell.courses = weightLiftingCourses
+            cell.courseTypeLabel.text = "Weight Lifting"
+
+        } else if indexPath.section == 2 {
+            cell.courses = crossFitCourses
+            cell.courseTypeLabel.text = "Cross Fit"
+
+        } else if indexPath.section == 3 {
+            cell.courses = boxingCourses
+            cell.courseTypeLabel.text = "Boxing"
+
+        } else if indexPath.section == 4 {
+            cell.courses = martialArtsCourses
+            cell.courseTypeLabel.text = "Martial Arts"
+
+        } else if indexPath.section == 5 {
+            cell.courses = otherCourses
+            cell.courseTypeLabel.text = "Other"
+
+        }
+        
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 200
     }
-
-
+    //DELETE MEEEEEE
+    
+    
+    
 }
+

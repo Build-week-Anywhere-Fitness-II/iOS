@@ -64,6 +64,11 @@
                 </constraints>
             </collectionViewCellContentView>
             <size key="customSize" width="276" height="173"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="25"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
             <connections>
                 <outlet property="collectionViewImage" destination="bCt-xj-cxu" id="bv6-h2-OzI"/>
                 <outlet property="collectionViewLabel" destination="raj-k9-9mw" id="kZr-rB-T7p"/>

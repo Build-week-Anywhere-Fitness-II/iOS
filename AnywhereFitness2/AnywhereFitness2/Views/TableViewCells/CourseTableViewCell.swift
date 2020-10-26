@@ -12,6 +12,9 @@ class CourseTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollecti
     
     //MARK: - Properties
     var courses = [Course]()
+    
+    
+    
     static let identifier = "CourseTableViewCell"
     
     //MARK: - IBOutlets
@@ -47,12 +50,14 @@ class CourseTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollecti
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CourseCollectionViewCell.identifier, for: indexPath) as! CourseCollectionViewCell
         cell.configure(with: courses[indexPath.row])
-        cell.layer.cornerRadius = 100
+        cell.layer.cornerRadius = 25
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 220, height: 180)
     }
+    
+    
 
 }
