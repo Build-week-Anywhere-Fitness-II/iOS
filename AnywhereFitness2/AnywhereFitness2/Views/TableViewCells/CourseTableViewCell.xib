@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CourseTableViewCell" rowHeight="170" id="GX4-ix-gU5" customClass="CourseTableViewCell" customModule="AnywhereFitness2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="359" height="170"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GX4-ix-gU5" id="ei6-qU-S9X">
+                <rect key="frame" x="0.0" y="0.0" width="359" height="170"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3cT-yq-Lys">
+                        <rect key="frame" x="20" y="28" width="319" height="1"/>
+                        <color key="backgroundColor" red="0.96993774180000003" green="0.44073683019999998" blue="0.34200680259999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="eGk-ht-D47"/>
+                        </constraints>
+                    </view>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="6bv-8J-1S4">
+                        <rect key="frame" x="0.0" y="36" width="359" height="127"/>
+                        <color key="backgroundColor" red="0.089791305360000004" green="0.101702325" blue="0.118345879" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="o7B-TX-sy0">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yoga" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IQF-K0-Svm">
+                        <rect key="frame" x="24" y="0.0" width="315" height="27"/>
+                        <color key="backgroundColor" red="0.089791305360000004" green="0.101702325" blue="0.118345879" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.089791305360000004" green="0.101702325" blue="0.118345879" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="6bv-8J-1S4" secondAttribute="bottom" constant="7" id="15a-QN-3kB"/>
+                    <constraint firstItem="3cT-yq-Lys" firstAttribute="leading" secondItem="ei6-qU-S9X" secondAttribute="leading" constant="20" id="BQV-gV-JPR"/>
+                    <constraint firstItem="IQF-K0-Svm" firstAttribute="top" secondItem="ei6-qU-S9X" secondAttribute="top" id="Ejo-lP-o1B"/>
+                    <constraint firstItem="6bv-8J-1S4" firstAttribute="leading" secondItem="ei6-qU-S9X" secondAttribute="leading" id="JXT-vW-nnr"/>
+                    <constraint firstAttribute="trailing" secondItem="IQF-K0-Svm" secondAttribute="trailing" constant="20" id="a8y-ch-yDf"/>
+                    <constraint firstItem="6bv-8J-1S4" firstAttribute="top" secondItem="3cT-yq-Lys" secondAttribute="bottom" constant="7" id="arW-gq-1fR"/>
+                    <constraint firstItem="3cT-yq-Lys" firstAttribute="top" secondItem="IQF-K0-Svm" secondAttribute="bottom" constant="1" id="l25-x3-3Jw"/>
+                    <constraint firstItem="IQF-K0-Svm" firstAttribute="leading" secondItem="ei6-qU-S9X" secondAttribute="leading" constant="24" id="uU7-jy-HFY"/>
+                    <constraint firstAttribute="trailing" secondItem="6bv-8J-1S4" secondAttribute="trailing" id="ueB-wq-Ret"/>
+                    <constraint firstAttribute="trailing" secondItem="3cT-yq-Lys" secondAttribute="trailing" constant="20" id="yA8-Rl-awU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="collectionView" destination="6bv-8J-1S4" id="bfi-gz-w7h"/>
+                <outlet property="courseTypeLabel" destination="IQF-K0-Svm" id="6oK-wH-650"/>
+            </connections>
+            <point key="canvasLocation" x="171.73913043478262" y="52.901785714285715"/>
+        </tableViewCell>
+    </objects>
+</document>

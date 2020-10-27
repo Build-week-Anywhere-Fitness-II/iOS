@@ -9,17 +9,19 @@
 import Foundation
 
 
-struct CourseRepresentation: Decodable {
-    let id: Int
-    let time: Date
-    let courseTitle: String
-    let courseType: String
-    let duration: String
-    let location: String
-    let skillLevel: String
-    let maxCourseSize: Int
-    let image: String
-    let courseDetails: String
+struct CourseRepresentation: Codable {
+    var identifier: Int64
+    var dateTime: Date
+    var courseTitle: String
+    var courseType: String
+    var duration: String
+    var location: String
+    var skillLevel: String
+    var maxCourseSize: Int64
+    var image: String
+    var courseDetails: String
+    var currentCourseSize: Int64
+    var instructorId: Int64
 }
 
 
